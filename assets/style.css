@@ -7,8 +7,45 @@ body{
     margin: 0;
 }
 
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+img {
+  max-width 85vm
+}
+
+h1 {
+    /* sizing, etc */
+}
+
 .special {
     color: purple;
     font-weight: bold;
 }
 
+.special:hover {
+    color: goldenrod;
+}
+
+@media screen and (max-width: 768px) {
+    .special {
+        font-size: 48px;
+        color: black;
+    }
+    .special:hover {
+        color: purple;
+    }
+
+    .about {
+        display: block;
+        text-align: center;
+    }
+
+    img {
+        width: 90vw;
+        height: 90vw;
+    }
+}
